@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration Form</h1>
+    </header>
+    <div id="container">
+      <div class="container_sub">
+        <img
+          class="imgs"
+          src="National Science Day-2023.jpeg"
+          alt="Seminar for students"
+        />
+        <h4 class="caption">National Science Day Seminar</h4>
+      </div>
+      <div class="container_sub">
+        <img class="imgs" src="Hackathon.png" alt="SIH" />
+        <h4 class="caption">Smart India Hackathon</h4>
+      </div>
+      <div class="container_sub">
+        <img class="imgs" src="FashionShow.jpg" alt="Fashion Show" />
+        <h4 class="caption">Fashion Show</h4>
+      </div>
+      <div class="container_sub">
+        <img class="imgs" src="Openmic.webp" alt="Open Mic" />
+        <h4 class="caption">Open Mic</h4>
+      </div>
+    </div>
+    <form>
+      <p>Enter your details</p>
+      <label class="label" for="name">Name:</label><br />
+      <input type="text" class="input" name="name" /><br />
+      <label class="label" for="email">Email:</label><br />
+      <input type="email" class="input" name="email" /><br />
+      <label class="label" for="phone">Mobile Number:</label><br />
+      <input type="tel" class="input" name="phone" pattern="[0-9]{10}" /><br />
+      <label class="label" for="college">Choose your college:</label><br />
+      <select name="college" class="input">
+        <option value="MIT">Manipal Institute of Technology</option>
+        <option value="KMC">Kasturba Medical College</option>
+        <option value="MIC">Manipal Institute of Communication</option>
+        <option value="Oth">Other</option>
+      </select>
+      <p>Select the events you want to take part in:</p>
+      <input
+        type="radio"
+        class="radio"
+        name="event1"
+        id="NationalScienceDaySeminar"
+      />
+      <label class="label" for="NationalScienceDaySeminar"
+        >National Science Day Seminar</label
+      ><br />
+      <input type="radio" class="radio" name="event2" id="SIH" />
+      <label class="label" for="SIH">Smart India Hackathon</label><br />
+      <input type="radio" class="radio" name="event3" id="Fashion" />
+      <label class="label" for="Fashion">Fashion Show</label><br />
+      <input type="radio" class="radio" name="event4" id="OpenMic" />
+      <label class="label" for="OpenMic">Open Mic</label><br />
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
